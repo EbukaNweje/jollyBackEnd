@@ -343,14 +343,14 @@ exports.signupEmailSand = async (req, res, next) =>{
                 Your Trading account has been set up successfully 
               </span>
               <span>
-                 You can go ahead and fund your Trade account to start up your Trade immediately. Deposit through Bitcoin.
+                 You can go ahead and fund your Trade account to start up your Trade immediately.
               </span>
 
-              <p>
+              <span>
                 For more enquiry kindly contact your account manager or write directly with our live chat support on our platform 
                <br> or you can send a direct mail to us at <span style="color: blue">${process.env.USER}.</span></p>
 
-               <p>
+               <span>
                 Thank You for choosing our platform and we wish you a successful trading.
                </p>
             </div>
