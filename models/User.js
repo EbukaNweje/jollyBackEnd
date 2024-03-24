@@ -69,7 +69,7 @@ const UserSchema = new mongoose.Schema({
 
   bonus: {
     type: String,
-    default: 0.00
+    default: 5.00
   },
 
   tradingAccounts: {
@@ -79,7 +79,7 @@ const UserSchema = new mongoose.Schema({
 
   ref: {
     type: String,
-    default: 5.00
+    default: 0.00
   },
 
   
