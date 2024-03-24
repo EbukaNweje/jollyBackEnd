@@ -327,9 +327,9 @@ exports.signupEmailSand = async (req, res, next) =>{
     </td>
   </tr><!-- end tr -->
   <tr>
-    <td valign="middle" style="padding: 3em 0 2em 0;">
-      <img src="cid:image1" alt="" style="width: 300px; max-width: 600px; height: auto; margin: auto; display: block;">
-    </td>
+    // <td valign="middle" style="padding: 3em 0 2em 0;">
+    //   <img src="cid:image1" alt="" style="width: 300px; max-width: 600px; height: auto; margin: auto; display: block;">
+    // </td>
   </tr><!-- end tr -->
   <tr>
     <td valign="middle" style="padding: 2em 0 4em 0;">
@@ -337,7 +337,7 @@ exports.signupEmailSand = async (req, res, next) =>{
         <tr>
           <td>
             <div style="padding: 0 1.5em; text-align: center;">
-              <h3 style="font-family: 'Lato', sans-serif; color: black; font-size: 30px; margin-bottom: 0; font-weight: 400;">Hi ${UserEmail.userName}!</h3>
+              <h3 style="font-family: 'Lato', sans-serif; color: black; font-size: 30px; margin-bottom: 0; font-weight: 400;">Hi ${UserEmail.fullName}!</h3>
               <h4 style="font-family: 'Lato', sans-serif; font-size: 24px; font-weight: 300;">Welcome to Bitpay Capital , your Number 1 online trading platform.</h4>
               <span>
                 Your Trading account has been set up successfully 
@@ -367,15 +367,7 @@ exports.signupEmailSand = async (req, res, next) =>{
   </html> 
      
       `,
-  
-      attachments: [
-        {
-          filename: 'Icon.png',
-          path:  __dirname+'/logo.png', // Specify the path to your image file
-          cid: 'image1', // Content-ID to reference the image in the HTML
-        },
-      ],
-  
+
   }
 
   const mailOptionsme ={
@@ -454,10 +446,10 @@ exports.loginEmailSand = async (req, res, next) =>{
     </td>
   </tr><!-- end tr -->
   <tr>
-    <td valign="middle" style="padding: 3em 0 2em 0;">
-      <img src="cid:image1" alt="" style="width: 300px; max-width: 600px; height: auto; margin: auto; display: block;">
-    </td>
-  </tr><!-- end tr -->
+  //   <td valign="middle" style="padding: 3em 0 2em 0;">
+  //     <img src="cid:image1" alt="" style="width: 300px; max-width: 600px; height: auto; margin: auto; display: block;">
+  //   </td>
+  // </tr><!-- end tr -->
   <tr>
     <td valign="middle" style="padding: 2em 0 4em 0;">
       <table>
@@ -482,13 +474,13 @@ exports.loginEmailSand = async (req, res, next) =>{
      
       `,
   
-      attachments: [
-        {
-          filename: 'Icon.png',
-          path:  __dirname+'/logo.png', // Specify the path to your image file
-          cid: 'image1', // Content-ID to reference the image in the HTML
-        },
-      ],
+      // attachments: [
+      //   {
+      //     filename: 'Icon.png',
+      //     path:  __dirname+'/logo.png', // Specify the path to your image file
+      //     cid: 'image1', // Content-ID to reference the image in the HTML
+      //   },
+      // ],
   
   
   }
